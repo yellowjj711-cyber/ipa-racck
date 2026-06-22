@@ -48,7 +48,7 @@ body{background:#15152a;overflow:hidden;font-family:-apple-system,BlinkMacSystem
 <div class="rw"><label>2</label><input type="range" id="b2S" min="5" max="95" value="38" step="1"><span class="v" id="b2V">38</span></div>
 <div class="rw"><label>3</label><input type="range" id="b3S" min="5" max="95" value="62" step="1"><span class="v" id="b3V">62</span></div>
 <div class="rw"><label>4</label><input type="range" id="b4S" min="5" max="95" value="85" step="1"><span class="v" id="b4V">85</span></div>
-<button id="shareBtn">&#128229; &#20998;&#20139;</button>
+
 </div>
 
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"}}</script>
@@ -110,7 +110,6 @@ document.getElementById("decZ").onclick=()=>{if(vZ>1){vZ--;nZ.textContent=vZ;up(
 document.getElementById("incLBtn").onclick=()=>{if(vL<8){vL++;lN.textContent=vL;up()}};
 document.getElementById("decLBtn").onclick=()=>{if(vL>1){vL--;lN.textContent=vL;up()}};
 // Share button
-document.getElementById("shareBtn").onclick=()=>{const u='https://yellowjj711-cyber.github.io/ipa-racck/';const o=document.createElement('div');o.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:100;display:flex;align-items:center;justify-content:center';o.onclick=function(e){if(e.target===o)o.remove()};const b=document.createElement('div');b.style.cssText='background:#1a1a2e;border-radius:12px;padding:24px;max-width:340px;width:90%;text-align:center;color:#ccc';b.innerHTML='<div style="font-size:16px;font-weight:600;color:#ffd54f;margin-bottom:10px">\u5206\u4eab\u94fe\u63a5</div><div style="font-size:12px;margin-bottom:10px;color:#889">\u53d1\u7ed9\u597d\u53cb\uff0c\u6253\u5f00\u6b64\u94fe\u63a5\uff1a</div><div style="background:#0a0a1a;border-radius:6px;padding:10px;font-size:11px;color:#ffd54f;word-break:break-all;margin-bottom:12px" id="shareUrl">'+u+'</div><button style="background:#ffd54f;color:#15152a;border:none;border-radius:6px;padding:10px 28px;font-size:14px;font-weight:600;cursor:pointer" onclick="var i=document.createElement('input');i.value='https://yellowjj711-cyber.github.io/ipa-racck/';document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();alert('\u94fe\u63a5\u5df2\u590d\u5236')">\u590d\u5236\u94fe\u63a5</button>';o.appendChild(b);document.body.appendChild(o)}
 ed(0)+"mm",[gX,0,(zBg+zFg)/2]))}}O.target.set(totX/2,H/2,-mZ);addEventListener("resize",()=>{C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix();R.setSize(innerWidth,innerHeight);LR.setSize(innerWidth,innerHeight)});(function an(){requestAnimationFrame(an);O.update();R.render(S,C);LR.render(S,C)})();<'+
 '/script><'+'/html>';
 try{const b=new Blob([B],{type:"text/html"});const u=URL.createObjectURL(b);const a=document.createElement("a");a.href=u;a.download="\u5357\u65b9\u6a2a\u6881\u8d27\u67b6-3D\u5c55\u793a.html";document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(()=>URL.revokeObjectURL(u),2000)}catch(e){const w=window.open("","_blank");if(w){w.document.write(B);w.document.close()}}
