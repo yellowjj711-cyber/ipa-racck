@@ -52,7 +52,8 @@ body{background:#15152a;overflow:hidden;font-family:-apple-system,BlinkMacSystem
 </div>
 
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"}}</script>
-<script type="module">
+<script type="module">window.onerror=function(m,s,l,c,err){var d=document.createElement('div');d.style.cssText='position:fixed;top:0;left:0;width:100%;padding:20px;background:#c00;color:#fff;font-size:14px;z-index:9999;font-family:monospace;white-space:pre-wrap';d.innerHTML='<b style="font-size:18px">JS Error:</b>\n'+m+'\n\nat line '+l+(err?'\n\n'+err.stack:'');document.body.prepend(d);console.error(m,err)};
+
 import*as T from"three";import{OrbitControls}from"three/addons/controls/OrbitControls.js";import{CSS2DRenderer,CSS2DObject}from"three/addons/renderers/CSS2DRenderer.js";
 const S=new T.Scene();S.background=new T.Color(0x15152a);
 const C=new T.PerspectiveCamera(25,innerWidth/innerHeight,0.1,120);C.position.set(6.5,4.0,7.5);
